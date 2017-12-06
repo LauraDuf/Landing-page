@@ -1,30 +1,33 @@
-.Fruits{
-  display: block;
-}
-.Fraise{
-  display: flex;
-  flex-direction: row;
-}
-.Poire{
-  display: flex;
-  flex-direction: row-reverse;
-}
-.plantes{
-  display: block;
-}
-.titre{
+h1{
   text-align: center;
 }
-.images{
+.plantes{
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
 }
-.texte{
+.violette{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.sapin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rose{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img{
+  width: 25%;
 }
 .tableau{
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,0 +1,16 @@
+.ex1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+p{
+  /*height: 20px;*/
+}
+body{
+  background-color: red;
+}
+@media sreen and (max-width: 500px){
+  body{
+    background-color: blue;
+  }
+}
