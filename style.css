@@ -1,0 +1,30 @@
+.Fruits{
+  display: block;
+}
+.Fraise{
+  display: flex;
+  flex-direction: row;
+}
+.Poire{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.plantes{
+  display: block;
+}
+.titre{
+  text-align: center;
+}
+.images{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.texte{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.tableau{
+  flex-wrap: wrap;
+}
