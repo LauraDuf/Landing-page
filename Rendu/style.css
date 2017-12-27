@@ -1,8 +1,14 @@
 #logo{
   width: 10%;
 }
-#hamburguer{
+#hamburger{
   display: none;
+  width: 10%;
+  background:#a0a29f;
+  padding-left: 40%;
+  padding-right: 70%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 body{
   margin: 0;
@@ -20,6 +26,7 @@ body{
 }
 ul {
   text-align: center;
+  width: 110%;
 }
 li {
   display: inline;
@@ -38,10 +45,10 @@ form{
   display: block;
   align-items: center;
   text-align: center;
-  padding-left: 500px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-right: 507px;
+  padding-left: 40%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 40%;
   background-image: url(http://www.musicalavenue.fr/wp-content/uploads/WSSFORM.jpg);
 }
 input{
@@ -75,4 +82,52 @@ input[type=submit] {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     transition: 0.5s;
+}
+input:hover{
+  background-color:#fff79b;
+}
+
+h2{
+  font-size: 28px;
+  text-align: center;
+  color: #d96ba7;
+}
+.images{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#affiche{
+  width: 20%;
+  height: 10%;
+}
+.description{
+  display: flex;
+  justify-content: space-around;
+}
+#com{
+  width:25%;
+  text-align: center;
+}
+@media screen and (max-width:800px) {
+  ul{
+    display: none
+  }
+  #hamburger{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .images{
+    display: block;
+
+  }
+  .description{
+    display: block;
+    text-align: left;
+  }
+  .nouveautées{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
