@@ -1,5 +1,6 @@
 #logo{
   width: 10%;
+  height: 100%;
 }
 #hamburger{
   display: none;
@@ -86,6 +87,11 @@ input[type=submit] {
 input:hover{
   background-color:#fff79b;
 }
+.ticket{
+  opacity:0;
+  width: 20%;
+  transition: 0.5s;
+}
 
 h2{
   font-size: 28px;
@@ -100,6 +106,7 @@ h2{
 #affiche{
   width: 20%;
   height: 10%;
+  transition: 1s;
 }
 .description{
   display: flex;
@@ -109,23 +116,51 @@ h2{
   width:25%;
   text-align: center;
 }
+
+#champ:hover + .ticket{
+  opacity:100;
+  transform: rotate(360deg);
+}
+#affiche:hover{
+  transform:scale(1.1, 1.1);
+}
+
 @media screen and (max-width:800px) {
   ul{
     display: none
+  }
+  #logo{
+    width: 20%;
+    height: 100%;
   }
   #hamburger{
     display: flex;
     justify-content: flex-end;
   }
+  form{
+    width: 40%;
+  }
   .images{
     display: block;
+    width: 50%;
+  }
+  #affiche{
+    width: 200px;
+    padding: 20px;
+    padding-left: 80px;
 
   }
   .description{
     display: block;
     text-align: left;
+    width: 500px;
   }
-  .nouveautées{
+  #com{
+    text-align: left;
+    width: 80%;
+    padding-bottom: 200px;
+  }
+  .nouveautees{
     display: flex;
     justify-content: space-around;
     align-items: center;
