@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
+
     <div class="menu">
       <img id="logo" src="https://www.brandcrowd.com/gallery/brands/pictures/picture13056660249162.jpg" alt="Logo">
       <ul>
@@ -15,17 +16,22 @@
         <li>Se connecter</li>
       </ul>
     </div>
-    <img id="hamburger" src="https://openclipart.org/image/2400px/svg_to_png/221605/menu-icon.png" alt="hamburger">
-      <form class="newsletter" action="index.html" method="post">
-        <h1>Inscrivez-vous à notre newsletter! </h1>
-        <input id="champ" type="text" name="Prénom" placeholder="Votre prénom">
-        <img src="http://galasigma.fr/images/ticket.png" alt="ticket" class="ticket">
-        <input id="champ" type="text" name="adresse mail" placeholder="Votre adresse mail">
-        <img src="http://galasigma.fr/images/ticket.png" alt="ticket" class="ticket">
-        <input id="champ" type="password" name="mdp" placeholder="Votre mot de passe">
-        <img src="http://galasigma.fr/images/ticket.png" alt="ticket" class="ticket">
-        <input type="button" name="valider" value="Valider">
-      </form>
+
+    <img id="hamburger" src="http://www.tastings.com/images/burger_menu.png" alt="hamburger">
+
+      <div class="newsletter">
+          <h1 id="Titre">Inscrivez-vous à notre newsletter! </h1>
+        <form action="index.html" method="post">
+          <input id="champ" type="text" name="Prénom" placeholder="Votre prénom">
+          <img src="http://galasigma.fr/images/ticket.png" alt="ticket" class="ticket">
+          <input id="champ" type="text" name="adresse mail" placeholder="Votre adresse mail">
+          <img src="http://galasigma.fr/images/ticket.png" alt="ticket" class="ticket">
+          <input id="champ" type="password" name="mdp" placeholder="Votre mot de passe">
+          <img src="http://galasigma.fr/images/ticket.png" alt="ticket" class="ticket">
+          <input type="submit" name="valider" value="Valider">
+        </form>
+      </div>
+
       <h2>Les nouveautés</h2>
     </br></br>
     <div class="nouveautees">
@@ -34,11 +40,50 @@
         <img id="affiche" src="http://www.bullesdeculture.com/bdc-content/uploads/2017/02/affiche-saturday-night-fever.jpg" alt="fever">
         <img id="affiche" src="http://www.conseilsmarketing.com/wp-content/uploads/2014/11/566163-l-affiche-du-spectacle-d-audrey-lamy-637x0-3.jpg" alt="audrey">
       </div>
+      <br><br>
       <div class="description">
         <p id="com">D'habitude, son psy, on vient le voir parce qu'on a besoin d'aide. On le paye et il écoute. On évite si possible de le provoquer, de l'insulter voire de le menacer physiquement.</p>
         <p id="com">Proche du film, ce spectacle musical, festif, avec de gros effets visuels mettra à l'honneur la musique, la danse et la fête.</p>
         <p id="com">Dernières avant Végas. Audrey Lamy, une idée de la Société en décalage avec la normalité.</p>
       </div>
     </div>
+
+    <br><br><br><br><br><br><br>
+
+    <div class="theatre">
+      <p id="tt">Découvrez les tendances theâtres et choisissez la pièce qui vous correspond!</p>
+      <img id="masques" src="http://www.icone-png.com/png/46/45762.png" alt="masques">
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div class="cinéma">
+      <img id="clap" src="https://images.onlinelabels.com/images/clip-art/Stellaris/Stellaris_Clapper-board.png" alt="clap">
+      <p id="tc">Soyez au courrant de toutes les sorties cinéma et bluray pour visionner vos films préférés...</p>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div class="CM">
+      <p id="tcm">Tous les incontournables de la scène musicale française et internationale!</p>
+      <img id="balancoires" src="https://img.aws.la-croix.com/2016/04/27/1200756290/Matilda-The-Musical-production-Royal-Shakespeare-Company_3_1400_931.jpg" alt="bançoires">
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+    <script type="text/javascript">
+      var titre = document.getElementById('Titre')
+      titre.addEventListener("mousemove", couleur, false)
+      function couleur(){
+        var texte=document.getElementById('Titre');
+        texte.style.color= '#de3786';
+      }
+    </script>
+
+    <footer>
+      <img id="twitter" src="http://s3.amazonaws.com/churchplantmedia-cms/white_flag/twitter-circle.png" alt="twitter">
+      <img id="facebook" src="http://bijao.com/img/facebook_gray.png" alt="facebook">
+      <p id="copy">Copyright Laura Dufourt 2018</p>
+    </footer>
   </body>
 </html>

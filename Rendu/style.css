@@ -4,10 +4,10 @@
 }
 #hamburger{
   display: none;
-  width: 10%;
-  background:#a0a29f;
+  width: 20%;
+  background:#0b0937;
   padding-left: 40%;
-  padding-right: 70%;
+  padding-right: 40%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -19,7 +19,7 @@ body{
 .menu{
   display: flex;
   justify-content: space-around;
-  background: #a0a29f;
+  background: #0b0937;
   color: white;
   overflow: auto;
   padding: 5px;
@@ -37,9 +37,15 @@ li {
   padding: 10px;
   border: 1px solid white;
 }
-h1{
-  font-size: 25px;
+
+.newsletter{
+  background-image: url(http://l.rgbimg.com/cache1nuoi8/users/w/we/weirdvis/600/meSbNaU.jpg);
+  padding-top: 6%;
+}
+#Titre{
+  font-size: 35px;
   color: white;
+  text-align: center;
 }
 form{
   width: 20%;
@@ -47,11 +53,11 @@ form{
   align-items: center;
   text-align: center;
   padding-left: 40%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   padding-right: 40%;
-  background-image: url(http://www.musicalavenue.fr/wp-content/uploads/WSSFORM.jpg);
 }
+
 input{
   font-size: 1em;
   margin: 10px 0;
@@ -84,6 +90,7 @@ input[type=submit] {
     border-radius: 5px;
     transition: 0.5s;
 }
+
 input:hover{
   background-color:#fff79b;
 }
@@ -92,11 +99,15 @@ input:hover{
   width: 20%;
   transition: 0.5s;
 }
+#champ:hover + .ticket{
+  opacity:100;
+  transform: rotate(360deg);
+}
 
 h2{
-  font-size: 28px;
+  font-size: 33px;
   text-align: center;
-  color: #d96ba7;
+  color: #ff7db1;
 }
 .images{
   display: flex;
@@ -115,16 +126,158 @@ h2{
 #com{
   width:25%;
   text-align: center;
-}
-
-#champ:hover + .ticket{
-  opacity:100;
-  transform: rotate(360deg);
+  font-size: 20px;
 }
 #affiche:hover{
   transform:scale(1.1, 1.1);
 }
 
+.theatre{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 7%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-left: 40%;
+  background: #b1ff7d;
+}
+#masques{
+  width: 20%;
+  padding-right: 7%;
+}
+#masques:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: wobble-horizontal 1s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+#tt{
+  text-align: left;
+  margin-right: 10%;
+  color: #2b2b2a;
+  font-size: 20px;
+}
+
+.cinéma{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 7%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-right: 40%;
+  background: #7dffeb;
+}
+#clap{
+  width: 20%;
+  margin-right: 10%;
+  margin-left: 3%;
+}
+#clap:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: wobble-horizontal 1s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+#tc{
+  text-align: left;
+  margin-right: 10%;
+  color: #2b2b2a;
+  font-size: 20px;
+}
+
+.CM{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 7%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-left: 40%;
+  background: #fdff7d;
+}
+#balancoires{
+  width: 30%;
+  margin-right: 10%;
+  margin-left: 3%;
+}
+#balancoires:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: wobble-horizontal 1s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+#tcm{
+  text-align: left;
+  margin-right: 10%;
+  color: #2b2b2a;
+  font-size: 20px;
+}
+
+
+@keyframes wobble-horizontal {
+	16.65% {
+		transform: translateX(8px);
+	}
+
+	33.3% {
+		transform: translateX(-6px);
+	}
+
+	49.95% {
+		transform: translateX(4px);
+	}
+
+	66.6% {
+		transform: translateX(-2px);
+	}
+
+	83.25% {
+		transform: translateX(1px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.wobble-horizontal {
+	display: inline-block;
+
+	@include hideTapHighlightColor();
+	@include hardwareAccel();
+	@include improveAntiAlias();
+
+	&:hover {
+		animation-name: wobble-horizontal;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: 1;
+	}
+}
+
+
+footer{
+  text-align: center;
+  background: #0b0937;
+  margin: 0px;
+  padding-bottom: 3px;
+  padding-top: 7px;
+}
+#twitter{
+  width: 5%;
+}
+#facebook{
+  width: 4.5%;
+}
+#copy{
+  color: white;
+  font-style: italic;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
 @media screen and (max-width:800px) {
   ul{
     display: none
@@ -165,4 +318,5 @@ h2{
     justify-content: space-around;
     align-items: center;
   }
+
 }
