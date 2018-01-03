@@ -40,7 +40,7 @@ li {
 
 .newsletter{
   background-image: url(http://l.rgbimg.com/cache1nuoi8/users/w/we/weirdvis/600/meSbNaU.jpg);
-  padding-top: 6%;
+  padding-top: 6px;
 }
 #Titre{
   font-size: 35px;
@@ -258,6 +258,56 @@ h2{
 	}
 }
 
+.emoji{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#clin{
+  width: 50px;
+}
+#reflechi{
+  width: 50px;
+}
+#haha{
+  width: 50px;
+}
+.missions{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#decouvrir{
+  text-align: center;
+  font-size: 25px;
+  color:white;
+  padding: 80px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/LACMTA_Circle_Green_Line.svg/200px-LACMTA_Circle_Green_Line.svg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 40px;
+}
+#inform{
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  padding: 80px;
+  background-image: url(https://pbs.twimg.com/media/CcbbYBXUsAAcmor.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 35px;
+}
+#amuse{
+  text-align: center;
+  font-size: 25px;
+  color:white;
+  padding: 80px;
+  background-image: url(https://cdn.stickylife.com/media/catalog/product/c/i/circle_vinyl_decal_2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:25px;
+  transition: 0.5s;
+}
 
 footer{
   text-align: center;
@@ -318,5 +368,6 @@ footer{
     justify-content: space-around;
     align-items: center;
   }
+
 
 }
